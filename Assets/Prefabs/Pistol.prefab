@@ -112,9 +112,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weaponType: 0
+  projectileLifeTime: 2
   projectilePrefab: {fileID: 1742120991362122, guid: ed5c304ce881db543a49642d199ffd29,
     type: 2}
   firePoint: {fileID: 4395772676342952}
+  fireRate: 1
+  FX: {fileID: 1589204609585108, guid: 590170f0bbb76e343ac86e429e853771, type: 2}
 --- !u!212 &212340386316437328
 SpriteRenderer:
   m_ObjectHideFlags: 1

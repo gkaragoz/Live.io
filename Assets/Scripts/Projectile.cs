@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour {
 
+    private GameObject _FX;
     private float _speed;
     private float _lifeTime;
     private Vector2 _direction;
@@ -22,6 +23,7 @@ public class Projectile : MonoBehaviour {
 	}
 
     private void DestroyItselfImmediately() {
+        Instantiate(_FX, transform.position, Quaternion.identity);
         Destroy(gameObject);
     }
 
@@ -37,6 +39,10 @@ public class Projectile : MonoBehaviour {
         if (collision.CompareTag("Obstacle")) {
             DestroyItselfImmediately();
         }
+    }
+
+    public void SetFX(GameObject FX) {
+        _FX = FX;
     }
 
     public void SetSpeed(float speed) {
