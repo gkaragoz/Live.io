@@ -21,11 +21,21 @@ public class Projectile : MonoBehaviour {
         _rb.velocity = _direction * _speed;
 	}
 
+    private void DestroyItselfImmediately() {
+        Destroy(gameObject);
+    }
+
     private void DestroyItself() {
         _lifeTime -= Time.deltaTime;
 
         if (_lifeTime <= 0f) {
-            Destroy(gameObject);
+            DestroyItselfImmediately();
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision) {
+        if (collision.CompareTag("Obstacle")) {
+            DestroyItselfImmediately();
         }
     }
 
