@@ -20,6 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4551361650103708}
   - component: {fileID: 198619271774305598}
+  - component: {fileID: 114359893589194516}
   - component: {fileID: 199844334764506454}
   m_Layer: 0
   m_Name: Gun_Projectile_FX
@@ -41,6 +42,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -180, y: 0, z: 0}
+--- !u!114 &114359893589194516
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1589204609585108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e20dd9db12eff54a8bbdf2fe646d2ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeTime: 0
 --- !u!198 &198619271774305598
 ParticleSystem:
   m_ObjectHideFlags: 1
