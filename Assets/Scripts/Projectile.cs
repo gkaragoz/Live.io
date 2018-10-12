@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using EZCameraShake;
 
 public class Projectile : MonoBehaviour {
 
@@ -23,6 +24,7 @@ public class Projectile : MonoBehaviour {
 	}
 
     private void DestroyItselfImmediately() {
+        CameraShaker.Instance.ShakeOnce(Random.Range(1f, 2f), 5f, 0.1f, 1f);
         Instantiate(_FX, transform.position, Quaternion.identity);
         Destroy(gameObject);
     }
