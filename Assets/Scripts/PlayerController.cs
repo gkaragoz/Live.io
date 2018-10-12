@@ -6,6 +6,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour {
 
     public float speed = 5f;
+    public Weapon weapon;
 
     private Rigidbody2D _rb;
 
@@ -21,6 +22,9 @@ public class PlayerController : MonoBehaviour {
 
         Vector2 targetVelocity = new Vector2(horizontal, vertical);
         _rb.velocity = targetVelocity * speed;
+
+        if (Input.GetMouseButton(0))
+            Fire();
     }
 
     void Aim() {
@@ -28,5 +32,10 @@ public class PlayerController : MonoBehaviour {
         Vector3 lookAtDirection = Input.mousePosition - objectPos;
 
         transform.rotation = Quaternion.Euler(new Vector3(0, 0, Mathf.Atan2(lookAtDirection.y, lookAtDirection.x) * Mathf.Rad2Deg));
+    }
+
+    void Fire() {
+        if (weapon != null)
+            weapon.Fire();
     }
 }

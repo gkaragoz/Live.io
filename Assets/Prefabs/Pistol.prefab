@@ -20,6 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4763486850373448}
   - component: {fileID: 212340386316437328}
+  - component: {fileID: 114748273749324414}
   m_Layer: 0
   m_Name: Pistol
   m_TagString: Untagged
@@ -77,8 +78,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1095038445105312}
-  m_LocalRotation: {x: -0, y: -0, z: -0.8102462, w: 0.5860897}
-  m_LocalPosition: {x: 1.6563087, y: 7.9163704, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 125.00016, y: 50.00005, z: 1}
   m_Children:
   - {fileID: 4816468330288406}
@@ -99,6 +100,21 @@ Transform:
   m_Father: {fileID: 4763486850373448}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114748273749324414
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1095038445105312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0514667ad168f8b4fbf34237c8a50bd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weaponType: 0
+  projectilePrefab: {fileID: 1742120991362122, guid: ed5c304ce881db543a49642d199ffd29,
+    type: 2}
+  firePoint: {fileID: 4395772676342952}
 --- !u!212 &212340386316437328
 SpriteRenderer:
   m_ObjectHideFlags: 1
