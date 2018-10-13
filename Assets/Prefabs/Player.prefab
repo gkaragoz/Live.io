@@ -229,14 +229,14 @@ Rigidbody2D:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1376774603031726}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
-  m_UseFullKinematicContacts: 0
+  m_UseFullKinematicContacts: 1
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 1000
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_AngularDrag: 0
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -273,7 +273,8 @@ MonoBehaviour:
   projectilePrefab: {fileID: 1742120991362122, guid: ed5c304ce881db543a49642d199ffd29,
     type: 2}
   firePoint: {fileID: 4301647979296334}
-  fireRate: 1
+  fireRate: 0.3
+  FX: {fileID: 1589204609585108, guid: 590170f0bbb76e343ac86e429e853771, type: 2}
 --- !u!114 &114134942499348480
 MonoBehaviour:
   m_ObjectHideFlags: 1
