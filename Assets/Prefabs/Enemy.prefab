@@ -38,7 +38,6 @@ GameObject:
   - component: {fileID: 50505952051953496}
   - component: {fileID: 58040127031023056}
   - component: {fileID: 114105910532569318}
-  - component: {fileID: 114737523197384370}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -195,18 +194,6 @@ MonoBehaviour:
   restrict: 1
   closerPointOnInvalid: 1
   debugPath: 1
---- !u!114 &114737523197384370
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1149132336569344}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ae49387b59ffee643a7598de336640ed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!212 &212128592935526200
 SpriteRenderer:
   m_ObjectHideFlags: 1
